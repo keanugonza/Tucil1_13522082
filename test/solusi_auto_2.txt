@@ -1,0 +1,9 @@
+79
+SS KK AA AA HH 
+(6, 1)
+(6, 13)
+(12, 13)
+(12, 3)
+(5, 3)
+
+Waktu dibutuhkan: 9363.547 ms / 9.364 detik.

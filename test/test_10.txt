@@ -1,0 +1,10 @@
+7
+5 1
+AA BB CC DD EE FF
+3
+AA CC
+15
+AA BB
+20
+CC DD
+30

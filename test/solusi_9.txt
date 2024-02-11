@@ -1,0 +1,6 @@
+20
+AA BB 
+(1, 1)
+(1, 2)
+
+Waktu dibutuhkan: 0.000 ms / 0.000 detik.

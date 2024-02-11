@@ -1,0 +1,3 @@
+0
+
+Waktu dibutuhkan: 1281.061 ms / 1.281 detik.

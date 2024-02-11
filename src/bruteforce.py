@@ -56,7 +56,7 @@ def solusi(mJejak, MATRIX, M_ROW, M_COL, BUFFER,sequence,bobot_sequence):
 	ALL_KOORDINAT = []
 	PATH =[]
 	KOORDINAT=[]
-	for i in range (1,BUFFER+1): #mencari semua path dengan panjang sequence 1 sampai max buffer
+	for i in range (2,BUFFER+1): #mencari semua path dengan panjang sequence 1 sampai max buffer
 		bruteForce(0,0,0,True,"",[],mJejak,MATRIX,M_ROW,M_COL,i,ALL_PATH,ALL_KOORDINAT)
 		PATH += ALL_PATH
 		KOORDINAT += ALL_KOORDINAT
