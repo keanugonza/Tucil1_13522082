@@ -16,10 +16,14 @@ if pilihan == 1:
     namaFile = input('\nPastikan file ada dalam folder "test".\nContoh nama file (soal.txt).\nMasukan nama file anda: ')
     reader = readFile.FileReader()
     reader.read_file(namaFile)
-    if (reader.condition) :
-        mJejak = np.zeros((reader.matrix_size[1],reader.matrix_size[0]))
-        print('\nJawaban: ')
-        bruteforce.solusi(mJejak, reader.matrix, reader.matrix_size[1], reader.matrix_size[0], reader.buffer, reader.sequence, reader.bobot_sequence)
+    while not (reader.condition) :
+        namaFile= input('Masukan nama file dengan benar: ')
+        reader.read_file(namaFile)
+    print('\n\n==========FILE DITEMUKAN==========')
+    print('\nJawaban: ')
+    mJejak = np.zeros((reader.matrix_size[1],reader.matrix_size[0]))
+    bruteforce.solusi(mJejak, reader.matrix, reader.matrix_size[1], reader.matrix_size[0], reader.buffer, reader.sequence, reader.bobot_sequence)
+    
 
 elif pilihan == 2:
     reader = readFile.FileReader()
@@ -28,7 +32,7 @@ elif pilihan == 2:
     print('\nMatrix: ')
     for i in range(len(reader.matrix)):
         print(reader.matrix[i])
-    print('\nSequences: ')
+    print('\nSequences (unik): ')
     for i in range(len(reader.sequence)):
         print(str(reader.sequence[i]) + '     (bobotnya:' + str(reader.bobot_sequence[i]) + ')')
     mJejak = np.zeros((reader.matrix_size[1],reader.matrix_size[0]))

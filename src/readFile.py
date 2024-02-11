@@ -19,6 +19,7 @@ class FileReader:
         currentDir = self.getDirectory()
         try:
             with open(os.path.join(currentDir, "..", "test", namaFile), 'r') as f:
+                self.condition = True
                 content = f.read()
                 content = content.split('\n')
                 content = [x for x in content if x.strip()]
@@ -48,7 +49,7 @@ class FileReader:
                     self.bobot_sequence.append(int(content[4+int(matrix_size[1])+i]))
         except FileNotFoundError:
             self.condition = False
-            print(f"File {namaFile} tidak ditemukan.")
+            print(f"\nFile {namaFile} tidak ditemukan (pastikan ada .txt).")
 
     def auto(self):
         print("\n====MODE AUTO====")
@@ -69,8 +70,10 @@ class FileReader:
 
         self.matrix = np.random.choice(token, size=(matrix_size[1], matrix_size[0]))
         for i in range(sequence_size): 
-            sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences)))
-            self.sequence.append(sequence)
+            cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences)))
+            while cur_sequence in self.sequence:
+                cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences)))
+            self.sequence.append(cur_sequence)
         self.bobot_sequence = np.random.randint(1,50, size=sequence_size)
 
 
