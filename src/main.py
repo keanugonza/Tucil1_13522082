@@ -9,7 +9,7 @@ print('2. Auto')
 
 
 pilihan =  int(input('Pilihan: '))
-while pilihan <0 or pilihan>2:
+while pilihan <1 or pilihan>2:
     pilihan =  int(input('Masukan pilihan dengan benar: '))
 
 if pilihan == 1:
@@ -19,8 +19,7 @@ if pilihan == 1:
     while not (reader.condition) :
         namaFile= input('Masukan nama file dengan benar: ')
         reader.read_file(namaFile)
-    print('\n\n==========FILE DITEMUKAN==========')
-    print('\nJawaban: ')
+    print('\n\n==========FILE DITEMUKAN==========\n')
     mJejak = np.zeros((reader.matrix_size[1],reader.matrix_size[0]))
     bruteforce.solusi(mJejak, reader.matrix, reader.matrix_size[1], reader.matrix_size[0], reader.buffer, reader.sequence, reader.bobot_sequence)
     
@@ -28,13 +27,13 @@ if pilihan == 1:
 elif pilihan == 2:
     reader = readFile.FileReader()
     reader.auto()
-    print("==============================================")
+    print("\n==============================================")
     print('\nMatrix: ')
     for i in range(len(reader.matrix)):
         print(reader.matrix[i])
     print('\nSequences (unik): ')
     for i in range(len(reader.sequence)):
         print(str(reader.sequence[i]) + '     (bobotnya:' + str(reader.bobot_sequence[i]) + ')')
+    print("\n==============================================\n")
     mJejak = np.zeros((reader.matrix_size[1],reader.matrix_size[0]))
-    print('\nJawaban:')
     bruteforce.solusi(mJejak, reader.matrix, reader.matrix_size[1], reader.matrix_size[0], reader.buffer, reader.sequence, reader.bobot_sequence)

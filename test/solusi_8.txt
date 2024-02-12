@@ -1,5 +1,6 @@
-45
-AA CC DD 
+Reward maksimal : 45
+Path token      : AA CC DD 
+Koordinat       :
 (1, 1)
 (1, 2)
 (2, 2)

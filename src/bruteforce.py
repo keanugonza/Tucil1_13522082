@@ -68,9 +68,10 @@ def solusi(mJejak, MATRIX, M_ROW, M_COL, BUFFER,sequence,bobot_sequence):
 
 	#tampilkan hasil
 	for bobot in bobotMax:
-		print(bobot)
+		print(f"Reward maksimal : {bobot}")
 	if bobot != 0:
-		print(hasilPath[0])
+		print(f"Path token      : {hasilPath[0]}")
+		print("Koordinat       : ")
 		for koordinat in koordinatHasil:
 			for koordinat2 in koordinat:
 				print(koordinat2)
@@ -89,9 +90,10 @@ def solusi(mJejak, MATRIX, M_ROW, M_COL, BUFFER,sequence,bobot_sequence):
 		namaSave = input('\nMasukan / buat nama file untuk menyimpan: ')
 		currentDir = os.path.dirname(os.path.realpath(__file__))
 		with open(os.path.join(currentDir, "..", "test", f"{namaSave}.txt"), 'w') as f:
-			f.write(str(bobot) + '\n')
+			f.write(f"Reward maksimal : {bobot}\n")
 			if bobot != 0:
-				f.write(str(hasilPath[0]) + '\n')
+				f.write(f"Path token      : {hasilPath[0]}\n")
+				f.write("Koordinat       :\n")
 				for koordinat in koordinatHasil:
 					for koordinat2 in koordinat:
 						f.write(str(koordinat2) + '\n')

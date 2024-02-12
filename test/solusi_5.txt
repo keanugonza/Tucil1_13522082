@@ -1,5 +1,6 @@
-110
-BD 7A 55 BD BD 55 
+Reward maksimal : 110
+Path token      : BD 7A 55 BD BD 55 
+Koordinat       :
 (6, 1)
 (6, 7)
 (3, 7)
@@ -7,4 +8,4 @@ BD 7A 55 BD BD 55
 (1, 2)
 (1, 1)
 
-Waktu dibutuhkan: 3530.089 ms / 3.530 detik.
+Waktu dibutuhkan: 3733.312 ms / 3.733 detik.

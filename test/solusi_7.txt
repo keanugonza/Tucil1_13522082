@@ -1,3 +1,3 @@
-0
+Reward maksimal : 0
 
-Waktu dibutuhkan: 294.998 ms / 0.295 detik.
+Waktu dibutuhkan: 279.809 ms / 0.280 detik.

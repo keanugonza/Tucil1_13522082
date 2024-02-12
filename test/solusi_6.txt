@@ -1,5 +1,6 @@
-50
-BB BB AA BB AA 
+Reward maksimal : 50
+Path token      : BB BB AA BB AA 
+Koordinat       :
 (2, 1)
 (2, 2)
 (1, 2)

@@ -75,16 +75,3 @@ class FileReader:
                 cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences)))
             self.sequence.append(cur_sequence)
         self.bobot_sequence = np.random.randint(1,50, size=sequence_size)
-
-
-
-
-if __name__ == "__main__":
-    reader = FileReader()
-    reader.auto()
-    print(reader.buffer)
-    print(reader.matrix_size)
-    print(reader.matrix)
-    print(reader.sequence_size)
-    print(reader.sequence)
-    print(reader.bobot_sequence)

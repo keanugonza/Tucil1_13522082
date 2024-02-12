@@ -1,9 +1,12 @@
-79
-SS KK AA AA HH 
+Reward maksimal : 112
+Path token      : DD FF AA SS HH DD SS 
+Koordinat       :
+(5, 1)
+(5, 4)
+(8, 4)
+(8, 5)
+(9, 5)
+(9, 1)
 (6, 1)
-(6, 13)
-(12, 13)
-(12, 3)
-(5, 3)
 
-Waktu dibutuhkan: 9363.547 ms / 9.364 detik.
+Waktu dibutuhkan: 22721.839 ms / 22.722 detik.

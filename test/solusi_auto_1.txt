@@ -1,8 +1,11 @@
-63
-55 E9 7A BD 
-(2, 1)
-(2, 6)
-(1, 6)
-(1, 3)
+Reward maksimal : 57
+Path token      : BD E9 E9 7A E9 BD 
+Koordinat       :
+(5, 1)
+(5, 5)
+(1, 5)
+(1, 2)
+(4, 2)
+(4, 5)
 
-Waktu dibutuhkan: 329.548 ms / 0.330 detik.
+Waktu dibutuhkan: 331.789 ms / 0.332 detik.
