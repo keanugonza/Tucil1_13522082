@@ -70,8 +70,8 @@ class FileReader:
 
         self.matrix = np.random.choice(token, size=(matrix_size[1], matrix_size[0]))
         for i in range(sequence_size): 
-            cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences)))
+            cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences+1)))
             while cur_sequence in self.sequence:
-                cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences)))
+                cur_sequence = ' '.join(np.random.choice(token, size= np.random.randint(1,ukuran_maks_sequences+1)))
             self.sequence.append(cur_sequence)
         self.bobot_sequence = np.random.randint(1,50, size=sequence_size)

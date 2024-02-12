@@ -4,13 +4,17 @@
 
 
 ## Table of Contents
+* [How to Use](#how-to-use)
 * [General Info](#general-information)
 * [Aturan Permainan](#aturan-permainan)
 * [Features](#features)
 * [Structure](#structure)
-* [How to Use](#how-to-use)
 * [Contact](#contact)
 
+## How to use
+Pada Command Prompt:
+ - Masuk ke folder src (cd src)
+ - python main.py
 
 ## General Information
 - Di dalam Tugas Kecil 1 ini, mencari solusi dari permainan Breach Protocol pada Cyberpunk 2077 menggunakan algoritma Brute Force.
@@ -71,20 +75,19 @@ Menemukan solusi dari permainan Breach Protocol yang paling optimal untuk
 
 ## Structure
 Tucil1_13522082 
- │ 
- ├── bin    
- ├── doc    
- │    └── Tucil1_K2_13522082_Keanu Amadius Gonza Wrahatno.pdf 
- ├── src    
- │    ├── bruteforce.py 
- │    ├── main.py   
- │    ├── readFile.py  
- ├── test   
- │    ├── solusi.txt 
- │    ├── test.txt 
- └── README.md  
+ │ <br>
+ ├── bin    <br>
+ ├── doc    <br>
+ │    └── Tucil1_K2_13522082_Keanu Amadius Gonza Wrahatno.pdf <br>
+ ├── src    <br>
+ │    ├── bruteforce.py <br>
+ │    ├── main.py   <br>
+ │    ├── readFile.py  <br>
+ ├── test   <br>
+ │    ├── solusi.txt <br>
+ │    ├── test.txt <br>
+ └── README.md  <br>
 
-## How to use
 
 ## Contact
 Keanu Amadius Gonza Wrahatno	<br>

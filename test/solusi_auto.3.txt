@@ -1,7 +1,0 @@
-Reward maksimal : 11
-Path token      : FF AA 
-Koordinat       :
-(4, 1)
-(4, 2)
-
-Waktu dibutuhkan: 0.000 ms / 0.000 detik.
